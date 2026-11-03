@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LTS TV</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#090d12;
+ color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:22px;
+ background:#111820;
+ border-bottom:1px solid #26333d;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+}
+.logo{font-size:27px;font-weight:bold;color:#55df78}
+.logo span{color:white}
+header small{color:#aaa}
+main{padding:24px;max-width:1100px;margin:auto}
+.hero{
+ padding:35px 25px;
+ border-radius:15px;
+ background:linear-gradient(120deg,#123b27,#14252d);
+ margin-bottom:25px;
+}
+.hero h1{font-size:30px;margin:0 0 10px}
+.hero p{color:#c4d4ca}
+h2{font-size:21px;margin-top:30px}
+.categories{
+ display:flex;gap:10px;flex-wrap:wrap;
+}
+.category{
+ background:#17212a;
+ color:white;
+ border:1px solid #34434d;
+ padding:13px 20px;
+ border-radius:9px;
+}
+.category.active{
+ background:#24a84c;
+ border-color:#24a84c;
+}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+ gap:14px;
+}
+.card{
+ background:#151e26;
+ border:1px solid #293640;
+ border-radius:12px;
+ padding:22px 12px;
+ text-align:center;
+}
+.card .symbol{font-size:32px;margin-bottom:12px}
+.card strong{display:block}
+.card p{font-size:12px;color:#9eabb5}
+footer{
+ text-align:center;
+ color:#89949d;
+ padding:35px 15px;
+ font-size:12px;
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="logo">LTS <span>TV</span></div>
+ <small>ENTRETENIMENTO</small>
+</header>
+<main>
+ <section class="hero">
+  <h1>Bem-vindo ao LTS TV</h1>
+  <p>Canais, filmes, séries e entretenimento em um só lugar.</p>
+ </section>
+
+ <h2>Explore o conteúdo</h2>
+ <div class="categories">
+  <button class="category active">📺 Canais</button>
+  <button class="category">🎬 Filmes</button>
+  <button class="category">🍿 Séries</button>
+ </div>
+
+ <h2>Minha programação</h2>
+ <div class="grid">
+  <div class="card">
+   <div class="symbol">📡</div>
+   <strong>TV ao vivo</strong>
+   <p>Seus canais</p>
+  </div>
+  <div class="card">
+   <div class="symbol">🎥</div>
+   <strong>Filmes</strong>
+   <p>Seu catálogo</p>
+  </div>
+  <div class="card">
+   <div class="symbol">📺</div>
+   <strong>Séries</strong>
+   <p>Suas temporadas</p>
+  </div>
+  <div class="card">
+   <div class="symbol">⚽</div>
+   <strong>Esportes</strong>
+   <p>Programação esportiva</p>
+  </div>
+ </div>
+</main>
+<footer>
+ LTS TV © 2026 — Sua diversão em um só lugar.
+</footer>
+</body>
+</html>
